@@ -1,0 +1,24 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git fetch --all --prune)",
+      "Bash(powershell -ExecutionPolicy Bypass -File \".specify/scripts/powershell/create-new-feature.ps1\" -Json -Number 1 -ShortName \"ros2-nervous-system\" -FeatureDescription \"Module: Module 1 – The Robotic Nervous System \\(ROS 2\\)\n\nAudience:\nAI and robotics students.\n\nFocus:\nROS 2 as middleware enabling communication between AI agents and humanoid robot controllers.\n\nChapters \\(Docusaurus\\):\n\n1. ROS 2 Fundamentals\n- Role of ROS 2 in Physical AI\n- Nodes, topics, services, message passing\n\n2. Python Agents to ROS 2\n- ROS 2 communication model\n- Bridging Python AI agents using rclpy\n- AI decision → ROS command → robot action flow\n\n3. Humanoid Modeling with URDF\n- Purpose of URDF\n- Links, joints, and kinematics\n- URDF''s role in simulation and control\n\nSuccess Criteria:\n- Reader understands ROS 2 as a robotic nervous system\n- Reader can explain ROS 2 communication primitives\n- Reader understands AI-to-robot integration via URDF\n\nConstraints:\n- Docusaurus Markdown\n- Conceptual focus, minimal code\n- Clear diagrams and consistent terminology\n\nNot Building:\n- Hardware-specific configuration\n- Full ROS 2 control implementations\")",
+      "Bash(powershell -ExecutionPolicy Bypass -File \".specify/scripts/powershell/setup-plan.ps1\" -Json)",
+      "Bash(powershell -ExecutionPolicy Bypass -File \".specify/scripts/powershell/check-prerequisites.ps1\" -Json)",
+      "Bash(powershell -ExecutionPolicy Bypass -File \".specify/scripts/powershell/check-prerequisites.ps1\" -Json -RequireTasks -IncludeTasks)",
+      "Bash(npm run build)",
+      "Bash(npm run serve)",
+      "Bash(dir \"C:\\\\Users\\\\acer\\\\Desktop\\\\hacakthon\" /s)",
+      "Bash(findstr -i \"agent\")",
+      "Bash(powershell -Command \"Get-ChildItem -Path ''C:\\\\Users\\\\acer\\\\Desktop\\\\hacakthon'' -Recurse | Where-Object { $_Name -like ''*agent*'' }\")",
+      "Bash(dir \"C:\\\\Users\\\\acer\\\\Desktop\\\\hacakthon\\\\frontend_book\")",
+      "Bash(git checkout 002-digital-twin-gazebo-unity)",
+      "Bash(git checkout -b 002-digital-twin-gazebo-unity)",
+      "Bash(powershell -ExecutionPolicy Bypass -File \".specify/scripts/powershell/create-new-feature.ps1\" -Json -Number 3 -ShortName \"ai-robot-brain-isaac\" -FeatureDescription \"Module: Module 3 – The AI-Robot Brain \\(NVIDIA Isaac™\\)\n\nAudience:\nAI and robotics students.\n\nFocus:\nAdvanced perception, navigation, and training for humanoid robots using NVIDIA Isaac.\n\nChapters \\(Docusaurus\\):\n\n1. NVIDIA Isaac Sim\n- Photorealistic simulation\n- Synthetic data generation\n- Role in training Physical AI systems\n\n2. Isaac ROS and Perception\n- Hardware-accelerated perception pipelines\n- Visual SLAM \\(VSLAM\\) concepts\n- Integration with ROS 2\n\n3. Navigation with Nav2\n- Path planning fundamentals\n- Navigation for humanoid movement\n- Perception → planning → action loop\")",
+      "Bash(dir \"C:\\\\Users\\\\acer\\\\Desktop\\\\hacakthon\\\\specs\\\\003-ai-robot-brain-isaac\")",
+      "Bash(powershell -Command \"Get-ChildItem -Path ''C:\\\\Users\\\\acer\\\\Desktop\\\\hacakthon\\\\frontend_book\\\\docs\\\\docs'' -Recurse\")",
+      "Bash(findstr -i vla)",
+      "Bash(.specify/scripts/powershell/setup-plan.ps1 -Json)"
+    ]
+  }
+}

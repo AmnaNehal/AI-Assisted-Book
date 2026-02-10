@@ -1,0 +1,104 @@
+####################################
+# Python
+####################################
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.log
+*.sqlite3
+*.db
+
+####################################
+# Virtual environments
+####################################
+.venv/
+venv/
+env/
+ENV/
+
+####################################
+# Python build / tooling
+####################################
+build/
+dist/
+.eggs/
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.pyright/
+ruff_cache/
+
+####################################
+# Environment variables
+####################################
+.env
+.env.*
+!.env.example
+
+####################################
+# FastAPI / Uvicorn
+####################################
+app.log
+uvicorn.log
+
+####################################
+# Node / Frontend (Docusaurus / React)
+####################################
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+####################################
+# Docusaurus
+####################################
+.frontmatter/
+.cache/
+build/
+.docusaurus/
+
+####################################
+# Frontend build output
+####################################
+frontend_book/build/
+frontend_book/.cache/
+frontend_book/node_modules/
+
+####################################
+# Qdrant / Vector data (IMPORTANT)
+####################################
+qdrant_storage/
+*.bin
+
+####################################
+# Database / migrations
+####################################
+alembic/versions/*
+!alembic/versions/.gitkeep
+
+####################################
+# OS / Editor junk
+####################################
+.DS_Store
+Thumbs.db
+desktop.ini
+
+####################################
+# VS Code
+####################################
+.vscode/
+!.vscode/settings.json
+!.vscode/extensions.json
+
+####################################
+# Logs / runtime files
+####################################
+logs/
+*.out
+
+####################################
+# Render / deployment
+####################################
+.render/

@@ -1,0 +1,2 @@
+for backend ::: backend_rag vicorn main:app --host 127.0.0.1 --port 8005 --reload
+frp frontend fronten_book npm run start

@@ -1,0 +1,6 @@
+This is a placeholder for the URDF structure diagram.
+In a real implementation, this would be an SVG or PNG image showing:
+- A robot model with multiple links connected by joints
+- Example of a humanoid robot structure
+- Visual representation of links, joints, and kinematic chains
+- How URDF describes the relationship between different parts

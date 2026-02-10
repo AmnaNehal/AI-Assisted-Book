@@ -1,0 +1,6 @@
+This is a placeholder for the ROS 2 communication model diagram.
+In a real implementation, this would be an SVG or PNG image showing:
+- Multiple nodes communicating through topics and services
+- The publish-subscribe model
+- Request-response service calls
+- The DDS layer underneath

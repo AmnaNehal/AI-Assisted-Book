@@ -1,0 +1,53 @@
+.features {
+  display: flex;
+  align-items: center;
+  padding: 2rem 0;
+  width: 100%;
+}
+
+.featureSvg {
+  height: 200px;
+  width: 200px;
+}
+
+.chatHeader {
+  padding: 14px 16px;
+  border-bottom: 1px solid #dee2e6;
+  background: linear-gradient(135deg, #ffffff, #f5f7fb);
+}
+
+.chatTitle {
+  font-weight: 700;
+  font-size: 16px;
+  color: #111;
+}
+
+.chatSubtitle {
+  font-size: 12px;
+  color: #6b7280;
+  margin-top: 2px;
+}
+
+.typingDots {
+  display: inline-flex;
+  gap: 6px;
+  align-items: center;
+  height: 18px;
+}
+
+.typingDots span {
+  width: 6px;
+  height: 6px;
+  border-radius: 999px;
+  background: rgba(0, 0, 0, 0.35);
+  display: inline-block;
+  animation: bounce 1s infinite ease-in-out;
+}
+
+.typingDots span:nth-child(2) { animation-delay: 0.15s; }
+.typingDots span:nth-child(3) { animation-delay: 0.3s; }
+
+@keyframes bounce {
+  0%, 80%, 100% { transform: translateY(0); opacity: 0.4; }
+  40% { transform: translateY(-4px); opacity: 0.9; }
+}

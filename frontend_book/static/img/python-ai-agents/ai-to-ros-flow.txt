@@ -1,0 +1,7 @@
+This is a placeholder for the AI-to-ROS flow diagram.
+In a real implementation, this would be an SVG or PNG image showing:
+- AI Decision Making process
+- ROS Command Generation
+- Middleware Transport via DDS
+- Robot Action Execution
+- Feedback Loop to AI agent

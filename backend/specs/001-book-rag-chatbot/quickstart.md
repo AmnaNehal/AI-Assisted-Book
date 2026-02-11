@@ -32,11 +32,7 @@ pip install -r requirements.txt
 ### 4. Configure Environment Variables
 Create a `.env` file in the `backend_rag` directory with the following content:
 
-```env
-COHERE_API_KEY=uy6s1e8s2KVkWxwZWP6wu4HXtCpH3nxt5AWs2DvP
-QDRANT_API_KEY=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2Nlc3MiOiJtIn0.nFWTxOH6RJEpm04TtjXRbA1KKX_v8xC4ABUWkTCngEk
-QDRANT_URL=https://ab39e2c0-06d0-41ad-8474-52410165479d.europe-west3-0.gcp.cloud.qdrant.io
-NEON_DB_URL=postgresql://neondb_owner:npg_6qMxf1SeldAZ@ep-sweet-lake-aho41jnu-pooler.c-3.us-east-1.aws.neon.tech/neondb?sslmode=require&channel_binding=require
+
 ```
 
 ### 5. Run the Application
@@ -45,18 +41,18 @@ cd backend_rag
 uvicorn main:app --reload --port 8000
 ```
 
-The API will be available at `http://localhost:8000`.
+The API will be available at `http://127.0.0.1:8005`.
 
 ### 6. API Documentation
 Once the application is running, you can access the interactive API documentation at:
-- `http://localhost:8000/docs` (Swagger UI)
-- `http://localhost:8000/redoc` (ReDoc)
+- `http://127.0.0.1:8005/docs` (Swagger UI)
+- `http://127.0.0.1:8005/redoc` (ReDoc)
 
 ## Testing the API
 
 ### Query the Full Book
 ```bash
-curl -X POST "http://localhost:8000/query-global" \
+curl -X POST "http://127.0.0.1:8005/query-global" \
   -H "Content-Type: application/json" \
   -d '{
     "query": "What are the main themes in this book?",
@@ -66,7 +62,7 @@ curl -X POST "http://localhost:8000/query-global" \
 
 ### Query Selected Text Only
 ```bash
-curl -X POST "http://localhost:8000/query-selection" \
+curl -X POST "http://127.0.0.1:8005/query-selection" \
   -H "Content-Type: application/json" \
   -d '{
     "query": "What does this passage mean?",
@@ -77,7 +73,7 @@ curl -X POST "http://localhost:8000/query-selection" \
 
 ### Health Check
 ```bash
-curl -X GET "http://localhost:8000/status"
+curl -X GET "http://127.0.0.1:8005/status"
 ```
 
 ## Next Steps

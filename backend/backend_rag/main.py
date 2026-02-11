@@ -18,7 +18,7 @@ app = FastAPI(
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["http://localhost:3000",
-                   "https://ai-assisted-book.onrender.com"],  # later restrict
+                   "https://ai-assisted-book.vercel.app"],  # later restrict
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],

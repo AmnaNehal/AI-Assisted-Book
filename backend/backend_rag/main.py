@@ -17,7 +17,8 @@ app = FastAPI(
 # 🔥 CORS (MANDATORY FOR FRONTEND)
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],  # later restrict
+    allow_origins=["http://localhost:3000",
+                   "https://ai-assisted-book.onrender.com"],  # later restrict
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],

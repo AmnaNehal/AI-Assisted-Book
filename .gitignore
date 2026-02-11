@@ -16,7 +16,8 @@ __pycache__/
 venv/
 env/
 ENV/
-
+.env
+backend/backend_rag/.env
 ####################################
 # Python build / tooling
 ####################################

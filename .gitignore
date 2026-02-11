@@ -102,3 +102,7 @@ logs/
 # Render / deployment
 ####################################
 .render/
+
+
+backend/__pycache__
+backend/backend_rag/__pycache__

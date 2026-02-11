@@ -1,0 +1,27 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(copy C:UsersacerBook_Creation_UsingAI-maintestbackendbackend_rag.env.example C:UsersacerBook_Creation_UsingAI-maintestbackendbackend_rag.env)",
+      "Bash(copy \"C:\\\\Users\\\\acer\\\\Book_Creation_UsingAI-main\\\\test\\\\backend\\\\backend_rag\\\\.env.example\" \"C:\\\\Users\\\\acer\\\\Book_Creation_UsingAI-main\\\\test\\\\backend\\\\backend_rag\\\\.env\")",
+      "Bash(pip install psycopg2-binary==2.9.9)",
+      "Bash(pip install --only-binary=all psycopg2-binary)",
+      "Bash(uvicorn main:app --reload)",
+      "Bash(python -m uvicorn main:app --reload)",
+      "Bash(cat C:UsersacerAppDataLocalTempclaudeC--Users-acer-Book-Creation-UsingAI-main-test-backendtasksb01a4ac.output)",
+      "Bash(python -c \"from main import app; print\\(''Import successful''\\)\")",
+      "Bash(python -m uvicorn main:app --reload --host 127.0.0.1 --port 8000)",
+      "Bash(python -c \"import sys; sys.path.insert\\(0, ''.''\\); import main; print\\(''Main module imported successfully''\\)\")",
+      "Bash(npm start)",
+      "Bash(node --version)",
+      "Bash(npm install)",
+      "Bash(python -m uvicorn main:app --host 127.0.0.1 --port 8000)",
+      "Bash(python -c \"import sys; sys.path.insert\\(0, ''.''\\); from main import app; print\\(''Main module imported successfully''\\)\")",
+      "Bash(python main.py)",
+      "Bash(python -c \"import sys; sys.path.insert\\(0, ''.''\\); import main; print\\(''Main module can be imported successfully''\\)\")",
+      "Bash(python -c \"from main import app; print\\(''Main app imported successfully''\\)\")",
+      "Bash(python run_backend.py)",
+      "Bash(netstat -ano)",
+      "Bash(findstr :8001)"
+    ]
+  }
+}
